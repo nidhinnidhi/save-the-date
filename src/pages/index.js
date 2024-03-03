@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-import Hero from "./components/Hero/Hero";
-import Title from "./components/Title/Title";
-import Background from "./components/Background/Background";
-import Card from "./components/Card/Card";
+import Hero from "../components/Hero/Hero";
+import Title from "../components/Title/Title";
+import Background from "../components/Background/Background";
+import Card from "../components/Card/Card";
 
-import HeroImage from "./assets/images/save-the-date-01.jpg";
-import bgDesign01 from "./assets/images/bg-design.png";
-import bgDesign02 from "./assets/images/bg-design-02.jpeg";
-import Arun from "./assets/images/arun-varghese.png";
-import Anusha from "./assets/images/anusha.png";
-import capturedMomentsMobile from "./assets/images/captured-moments-mobile.png";
-import capturedMomentsDesktop from "./assets/images/captured-moments-desktop.png";
-import LocationImage from "./assets/images/save-the-date-02.jpg";
+import HeroImage from "../assets/images/save-the-date-01.jpg";
+import bgDesign01 from "../assets/images/bg-design.png";
+import bgDesign02 from "../assets/images/bg-design-02.jpeg";
+import Arun from "../assets/images/arun-varghese.png";
+import Anusha from "../assets/images/anusha.png";
+import capturedMomentsMobile from "../assets/images/captured-moments-mobile.png";
+import capturedMomentsDesktop from "../assets/images/captured-moments-desktop.png";
+import LocationImage from "../assets/images/save-the-date-02.jpg";
 
 export default function Home() {
 	return (
