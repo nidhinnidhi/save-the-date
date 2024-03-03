@@ -1,0 +1,36 @@
+.hero {
+	&::before {
+		position: absolute;
+		content: "";
+		background: rgba($color: #000000, $alpha: 0.5);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+}
+
+%line {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: #dd526a;
+}
+
+.textLine {
+	position: relative;
+
+	&::after {
+		@extend %line;
+		right: -110%;
+	}
+	&::before {
+		@extend %line;
+		left: -110%;
+	}
+}
