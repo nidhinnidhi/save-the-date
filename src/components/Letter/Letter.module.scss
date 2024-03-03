@@ -1,0 +1,9 @@
+.letter {
+	&:first-child {
+		border-bottom: 1px solid theme("colors.gray.300");
+		@media (min-width: 1280px) {
+			border-bottom: 0;
+			border-right: 1px solid theme("colors.rose.600");
+		}
+	}
+}

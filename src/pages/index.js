@@ -13,6 +13,8 @@ import Anusha from "../assets/images/anusha.png";
 import capturedMomentsMobile from "../assets/images/captured-moments-mobile.png";
 import capturedMomentsDesktop from "../assets/images/captured-moments-desktop.png";
 import LocationImage from "../assets/images/save-the-date-02.jpg";
+import CoverText from "@/components/CoverText/CoverText";
+import Letter from "@/components/Letter/Letter";
 
 export default function Home() {
 	return (
@@ -52,20 +54,58 @@ export default function Home() {
 				}
 			/>
 			<Background backgroundImage={bgDesign02} style={"contain"}>
-				<Image
-					src={capturedMomentsDesktop}
-					alt={""}
-					className="mx-auto  mb-4 sm:mb-6 lg:mb-8 hidden sm:block"
-				/>
-				<Image
-					src={capturedMomentsMobile}
-					alt={""}
-					className="mx-auto  mb-4 sm:mb-6 lg:mb-8  sm:hidden"
-				/>
+				<div className="pb-44">
+					<Image
+						src={capturedMomentsDesktop}
+						alt={""}
+						className="mx-auto  mb-4 sm:mb-6 lg:mb-8 hidden sm:block"
+					/>
+					<Image
+						src={capturedMomentsMobile}
+						alt={""}
+						className="mx-auto  mb-4 sm:mb-6 lg:mb-8  sm:hidden"
+					/>
+				</div>
 			</Background>
-			<Background backgroundImage={LocationImage} style={"cover"}>
-				<div style={{ minHeight: "500px" }}> </div>
+			<Background
+				backgroundImage={LocationImage}
+				style={"cover"}
+				withShade={true}
+			>
+				<div className="py-40 px-10 pb-96 ">
+					<CoverText
+						title={"When & Wheres"}
+						subText={"13 Apr 2024"}
+						theme={"light"}
+					/>
+				</div>
 			</Background>
+			<div
+				className="container mx-auto w-5/6 xl:w-4/6 relative drop-shadow-2xl"
+				style={{ top: "-200px" }}
+			>
+				<div className="text grid grid-cols-1 xl:grid-cols-2  justify-items-stretch bg-white ">
+					<Letter
+						title={"Ceremony"}
+						date={"Saturday, April 13, 2024"}
+						time={"10:00 – 11:00"}
+						location={"Salem Marthoma Church, Mookkuthala"}
+						linkText={"Get Direction"}
+						linkUrl={"https://maps.app.goo.gl/wDrSwMXV5YCWvTS97"}
+					/>
+
+					<Letter
+						title={"Reception"}
+						date={"Saturday, April 13, 2024"}
+						time={"12:00 Onwards"}
+						location={
+							"White Rose Convention Centre Naranipuzha Road, Madathipadam"
+						}
+						linkText={"Get Direction"}
+						linkUrl={"https://maps.app.goo.gl/wDrSwMXV5YCWvTS97"}
+					/>
+				</div>
+			</div>
 		</main>
 	);
 }
