@@ -11,7 +11,7 @@ const Title = ({ title, text }) => {
 			<div className=" max-w-lg m-auto">
 				<p className="text-gray-700 text-center  font-lora mb-3">{text}</p>
 			</div>
-			<Image src={TitleDidiver} alt={""} className="w-auto m-auto" />
+			<Image src={TitleDidiver} alt={""} className="w-80 m-auto" />
 		</div>
 	);
 };
