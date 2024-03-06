@@ -72,7 +72,7 @@ export default function Home() {
 				style={"cover"}
 				withShade={true}
 			>
-				<div className="py-40 px-10 pb-96 ">
+				<div className=" px-5 pb-56  sm:py-40 sm:px-10 sm:pb-96 ">
 					<CoverText
 						title={"When & Wheres"}
 						subText={"13 Apr 2024"}
@@ -102,7 +102,7 @@ export default function Home() {
 							"White Rose Convention Centre Naranipuzha Road, Madathipadam"
 						}
 						linkText={"Get Direction"}
-						linkUrl={"https://maps.app.goo.gl/wDrSwMXV5YCWvTS97"}
+						linkUrl={"https://maps.app.goo.gl/6sGdnwQ9Qxub33Hd9"}
 					/>
 				</div>
 			</div>
